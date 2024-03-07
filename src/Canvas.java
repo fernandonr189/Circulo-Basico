@@ -8,7 +8,7 @@ public class Canvas extends JFrame {
     private final BufferedImage buffer;
 
     public Canvas() {
-        setTitle("LineaBresenham");
+        setTitle("CirculoBasico");
         setSize(600, 600);
         panel = new JPanel();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
