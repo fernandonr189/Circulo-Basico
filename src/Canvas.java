@@ -41,8 +41,12 @@ public class Canvas extends JFrame {
             double temp = Math.sqrt(Math.pow(r,2)-Math.pow((y-yc),2));
             double xa = xc + temp;
             double xb = xc - temp;
-            buffer.setRGB((int) xa, y, a.getRGB());
-            buffer.setRGB((int) xb, y, a.getRGB());
+            pixel((int) xa, y, a);
+            pixel((int) xb, y, a);
         }
+    }
+
+    private void pixel(int x, int y, Color a) {
+        buffer.setRGB(x, y, a.getRGB());
     }
 }
